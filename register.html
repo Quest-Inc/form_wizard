@@ -1,0 +1,224 @@
+<!doctype html>
+<!--[if lte IE 9]>
+<html lang="en" class="oldie">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="s7PYoGy7rKclEA3JFMadTepqE1+lJ23TwktR+k3Juq/PgaN+Nhj+5fIz39l73v17nldXvJUuDbts73kW4rwAoQ==" />
+
+<title>Form Wizard</title>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+
+</head>
+
+<body>
+
+    <div class="joincontent">
+    <h5 class="text-center">Registration Form</h5>
+    <div class="progresscont">
+
+        <div class="progress" style="height: 5px;">
+      <div id="progresswizard" class="progress-bar" role="progressbar" style="width: 15%;" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+     <div class="circleblocks">
+         <div class="d-flex justify-content-around mb-3">
+        <div class="p-2 ">
+            <div class="aboutblock">
+            <div class="circulo activecirculo text-center"><i class="fas fa-user"></i></div>
+            <div class="title text-center">About</div>
+        </div>
+        </div>
+        <div class="p-2 ">
+            <div class="addressblock">
+            <div class="circulo text-center"><i class="fas fa-location-arrow"></i></div>
+            <div class="title text-center">Address</div>
+        </div>
+        </div>
+        <div class="p-2 ">
+            <div class="verifyblock">
+            <div class="circulo text-center"><i class="far fa-id-card"></i></div>
+            <div class="title text-center">Verify</div>
+        </div>
+        </div>
+      </div>
+        </div>
+        <form action="registerUser" method="POST">
+        <input type="hidden" name="_token" value="iJquRbgH4Np4OcWzjk8Bd03CaexHzse7gz2vHrml">
+
+        <div class="registration-content">
+        <div id="aboutcont" data-progress="15%">
+          <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+
+             <label for="firstname">First Name <span style="color: #cc1818;">*</span></label>
+                            <input type="text" class="form-control form-control-lg" name="firstname" id="firstname" required>
+
+                        </div>
+
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+
+         <label for="lastname">Last Name <span style="color: #cc1818;">*</span></label>
+                            <input type="text" class="form-control form-control-lg" name="lastname" id="lastname" required>
+
+                        </div>
+
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+
+             <label for="username">Username <span style="color: #cc1818;">*</span></label>
+                            <input type="text" class="form-control form-control-lg" name="username" id="username" required>
+
+                        </div>
+
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+
+         <label for="email">Email <span style="color: #cc1818;">*</span></label>
+                            <input type="text" class="form-control form-control-lg" name="email" id="email" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+                        </div>
+
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+
+             <label for="password">Password <span style="color: #cc1818;">*</span></label>
+                            <input type="password" class="form-control form-control-lg" name="password" id="password" required>
+
+                        </div>
+
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+
+         <label for="repassword">Re-Password <span style="color: #cc1818;">*</span></label>
+                            <input type="password" class="form-control form-control-lg" name="repassword" id="repassword" required>
+
+                        </div>
+
+            </div>
+             <div class="col-lg-6">
+              <div class="form-group">
+
+         <label for="phone">Phone <span style="color: #cc1818;">*</span></label>
+                            <input type="text" class="form-control form-control-lg" name="phone" id="phone" required>
+
+                        </div>
+
+            </div>
+          </div>
+
+
+
+        </div>
+            <div id="addrescont" data-progress="50%">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="form-group">
+
+         <label for="streetname">Street Name <span style="color: #cc1818;">*</span></label>
+                            <input type="text" class="form-control form-control-lg" name="streetname" id="streetname" required>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+
+         <label for="streetno">Street Number <span style="color: #cc1818;">*</span></label>
+                            <input type="text" class="form-control form-control-lg" name="streetno" id="streetno" required>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+
+         <label for="city">City <span style="color: #cc1818;">*</span></label>
+                          <input type="text" class="form-control form-control-lg" name="city" id="city" value="Toronto" required>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+
+         <label for="postalcode">Postal Code <span style="color: #cc1818;">*</span></label>
+                          <input type="text" class="form-control form-control-lg" name="postalcode" id="postalcode"  required>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+
+         <label for="state">State</label>
+                            <input type="text" class="form-control form-control-lg" name="state" id="state" value="Ontario" required>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+
+         <label for="country_residence">Country <span style="color: #cc1818;">*</span></label>
+                          <select name="country_residence" class="selectpicker countrypicker form-control form-control-lg">
+                <option value="">Canada</option>
+                <option value="">United States</option>
+                <option value="">United Kingdom</option>
+                <option value="">Germany</option>
+                <option value="">France</option>
+                </select>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="verifycont" data-progress="85%">
+                <h6 class="text-center">In order to verify your identity based on the
+                    (Know your Customer) rules you have to upload one Government ID(Passport,
+                    ID Card or Driver's License) as well as a Proof of Address(Any bill that
+                    is clearly on your name and address that you register at our site).</h6>
+
+
+            </div>
+        </div>
+
+     <div class="d-flex justify-content-between mb-3 wizard-navigation ">
+        <div class="p-2"><button id="prevbtn" type="button" class="btn btn-outline-dark btn-lg">Previous</button></div>
+
+        <div class="p-2"><button id="nextbtn" type="button" class="btn btn-primary btn-lg text-center">Next</button>
+        <button id="submitForm" name="submitForm" style="" type="submit" class="btn btn-primary btn-lg ">Create Profile</button>
+        </div>
+      </div>
+        </form>
+
+
+    </div>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/vanilla.js"></script>
+
+</body>
+</html>

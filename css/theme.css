@@ -1,0 +1,179 @@
+/* CSS Document */
+div.joincontent{
+	position: relative;
+	width: 65%;
+  min-height: 85vh;
+	height: auto;
+	margin-top: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fcfcfc;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.12);
+
+}
+div.progresscont
+	{
+		width: 98%;
+		padding-top: 5.5%;
+		margin-left: auto;
+		margin-right: auto;
+
+		height: 7rem;
+
+	}
+	div.joincontent h5{
+		font-family: 'Noto Serif JP', sans-serif;
+		color: #34393f;
+	}
+	div.circulo{
+		width: 5em;
+		height: 5em;
+		border: 2px solid #45597a;
+		background-color: #fcfcfc;
+		border-radius: 2.5em;
+		padding-top: 30%;
+		cursor: pointer;
+	}
+	.activecirculo
+	{
+	transition: .5s ease all;
+	background-color: #45597a !important;
+	}
+	.activecirculo i{
+		color: #fcfcfc !important;
+	}
+	div.circulo i{
+		font-size: 1.75rem;
+		color: #45597a;
+	}
+	div.circleblocks{
+		width: 100%;
+		position: absolute;
+		top: 0;
+		margin-top: 3.5%;
+	}
+	.progress-bar{
+		background-color: #45597a !important;
+	}
+	.wizard-navigation{
+		position: relative;
+		bottom: 0;
+		width: 98%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 2.5%;
+	}
+	.wizard-navigation button{
+		border-radius: 2rem;
+		width: 10rem;
+	}
+#submitForm
+{
+width: 15rem;
+}
+	div.registration-content{
+		width: 95%;
+		min-height: 51vh;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		margin-top: 5%;
+		padding-top: 2.5%;
+	}
+	div.registration-content > div{
+		width: 100%;
+		min-height: inherit;
+
+	}
+div.registration-content input{
+	border-radius: 2rem;
+}
+	#addrescont,#verifycont,#aboutcont{
+		display: none;
+	}
+	#aboutcont{
+
+	}
+	#addrescont{
+
+	}
+	#verifycont{
+
+	}
+
+#submitForm{
+	display: none;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+	background-color: #c5ccd8 !important;
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#id-cont,#proof-cont{
+    width: 100%;
+	height: 18em;
+	padding: 2.5%;
+}
+
+.uploadid{
+	border: 1px solid #c9ced6;
+	height: 40vh;
+	position:relative;
+}
+.uploadid .form-group
+{
+	height: inherit !important;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  div.joincontent{
+    width: 98%;
+    height: 155vh;
+
+  }
+  div.registration-content{
+    padding-top: 17.5%;
+  }
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+
+}
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1350px) {
+#id-cont,#proof-cont{
+   height: 15em;
+
+}
+}
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1750px) {
+div.joincontent{
+
+	height: 94vh;
+
+
+}
+}
