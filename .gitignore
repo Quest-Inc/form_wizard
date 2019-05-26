@@ -1,0 +1,4 @@
+# Ignore idea changes
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/tasks.xml
